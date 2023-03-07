@@ -1,0 +1,21 @@
+<div class="row row-cols-1 row-cols-md-1 g-1">
+<div class="col">
+<div id="<%= dom_id client %>" class="card mx-3 mb-4 text-white bg-dark" >
+ 
+  <div class="card-body">
+    <h5 class="card-title">
+    <%= client.name %>
+    </h5>
+        <p class="card-text"> <%= client.kind %></p>
+    <p class="card-text text-muted">
+      <small>
+      <strong>Designed by:</strong>
+       <%= client.designed_by %>
+      </small>
+    </p>
+   <%= link_to 'More', client_path(client), class: 'btn btn-outline-primary' %>
+  </div>
+</div>
+</div>
+</div>
+
